@@ -1,0 +1,3 @@
+String nije primitivan tip podatka u Javi, veæ je objekat koji pripada klasi String class. 
+Ipak omoguæeno je da se string može pojaviti izmeðu duplih navodnika (kao u C-u),
+ jer kompajler automatski kreira neophodni String objekat.
