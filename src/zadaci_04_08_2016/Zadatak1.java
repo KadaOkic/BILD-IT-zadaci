@@ -17,12 +17,16 @@ public class Zadatak1 {
 			try {
 				System.out.println("Enter the number :");
 				int number = input.nextInt();
+				// begin from the first prime number
 				int i = 2;
+				// while is number different from 1 and has no rest print i
 				while (number != 1) {
 					if (number % i == 0) {
 						System.out.print(i + " ");
+						// again devide with 2 if it can
 						number = number / i;
 					} else {
+						// raise i by one and go through the loop
 						i++;
 					}
 				}
@@ -36,6 +40,7 @@ public class Zadatak1 {
 				input.nextLine();
 			}
 		}
+		// Scanner closed
 		input.close();
 
 	}

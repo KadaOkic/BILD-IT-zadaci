@@ -26,15 +26,15 @@ public class Zadatak3 {
 				 * divisor For the two numbers he entered
 				 */
 
-				System.out.println("Najveci zajednicki djelilac za " + n1
+				System.out.println("Greatest common divisor for " + n1
 						+ " i " + n2 + " is " + gcd(n1, n2));
 				/**
 				 * With try and catch we " catch " possible exceptions if the
 				 * user enters something else then integer
 				 */
 			} catch (InputMismatchException | ArithmeticException ex) {
-				System.out.println("Pokusajte ponovo. ("
-						+ "Pogresan unos: Cijeli broj se trazi ");
+				System.out.println("Try again. ("
+						+ "Invalid input: Enter an integer ");
 				isGood = true;
 			}
 			// final statements
