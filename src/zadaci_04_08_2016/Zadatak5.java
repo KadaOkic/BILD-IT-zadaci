@@ -13,34 +13,34 @@ public class Zadatak5 {
 
 	public static void main(String[] args) {
 
-		final int MAX_NUMBER_OF_SCORE = 100;
+		final int MAX_NUMBER_OF_ENTRY = 100;
 
 		Scanner input = new Scanner(System.in);
 		boolean isGood = true;
 		while (isGood) {
 			isGood = false;
 			try {
-				int[] score = new int[MAX_NUMBER_OF_SCORE];
+				int[] entry = new int[MAX_NUMBER_OF_ENTRY];
 				int sum = 0, avg = 0, n = 0;
 				System.out
 						.print("Enter array of numbers (End input with a zero):");
-				for (int i = 1; i < score.length; i++) {
+				for (int i = 1; i < entry.length; i++) {
 
-					score[i] = input.nextInt();
-					if (score[i] < 1) {
+					entry[i] = input.nextInt();
+					if (entry[i] < 1) {
 						avg = sum / i;
 						break;
 					} else {
-						sum += score[i];
+						sum += entry[i];
 						n++;
 					}
 				}
 
 				int equal = 0, above = 0, below = 0;
 				for (int i = 1; i < n; i++) {
-					if (score[i] == avg) {
+					if (entry[i] == avg) {
 						equal++;
-					} else if (score[i] > avg) {
+					} else if (entry[i] > avg) {
 						above++;
 					} else {
 						below++;
@@ -48,11 +48,11 @@ public class Zadatak5 {
 
 				}
 
-				System.out.println("The number of scores equal to average is "
+				System.out.println("The number of entry equal to average is "
 						+ equal);
-				System.out.println("The number of scores above average is "
+				System.out.println("The number of entry above average is "
 						+ above);
-				System.out.println("The number of scores below average is "
+				System.out.println("The number of entry below average is "
 						+ below);
 			} catch (InputMismatchException ex) {
 				System.out.println("Try again. ("
