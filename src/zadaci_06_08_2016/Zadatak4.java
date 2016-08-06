@@ -15,9 +15,10 @@ public class Zadatak4 {
 		String s = input.nextLine();
 
 		for (int i = 0; i < s.length(); i++) {
-			// calculate the odd positions
-			if ((i + 2) % 2 == 1) {
-				System.out.print(s.charAt(i)); // print i which is on odd index
+			// calculate the evan positions
+			if ((i + 1) % 2 == 1) {
+				System.out.print(s.charAt(i)); // print i which is on evan index
+												// but odd to human eye
 			}
 		}
 		input.close();
