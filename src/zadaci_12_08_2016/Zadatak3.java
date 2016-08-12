@@ -11,7 +11,7 @@ public class Zadatak3 {
 		int numberOfPrime = 0;
 		for (int i = 0; i < 100000; i++) {
 			// if is prime print it and increment by one number of primes
-			if (isPrime(i) != 0) {
+			if (isPrime(i) != 0 && isPrime(i) != 1) {
 				System.out.print(i + " ");
 				numberOfPrime++;
 				if (numberOfPrime % 10 == 0) {
