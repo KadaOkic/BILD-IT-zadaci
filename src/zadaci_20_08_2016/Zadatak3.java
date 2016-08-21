@@ -19,7 +19,7 @@ public class Zadatak3 {
 		int[] randomArray = new int[100000];
 		// Creating an unsorted array of 100,000 random numbers
 		for (int i = 0; i < randomArray.length; i++) {
-			randomArray[i] = (int) (Math.random() * 100000);
+			randomArray[i] = (int) (Math.random() * 100);
 		}
 		// create stopwatch
 		StopWatch stopWatch = new StopWatch();
