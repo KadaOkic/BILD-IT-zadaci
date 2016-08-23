@@ -15,36 +15,41 @@ public class GameCraps {
 
 	public static void main(String[] args) {
 
-		int sum = rollTwoDice();
-		if (sum == 2 || sum == 3 || sum == 12) {
-			System.out.println("You lose.");
-		} else if (sum == 7 || sum == 11) {
-			System.out.println("You win.");
-		} else {
-			int point = sum;
-			System.out.println("Point is: " + point + " roll again.");
-			sum = rollDice();
-			if (point == sum) {
-				System.out.println("You got " + sum + ". You win.");
-			} else {
-				System.out.println("You got " + sum + ". You lose.");
-			}
-		}
-	}
-
-	// Method rollDice
-	public static int rollDice() {
-		// Generate a random number between 1 to 6
-		return (int) (1 + Math.random() * 6);
-	}
-
-	// Method printRoll prints the sum of the two dice
-	public static int rollTwoDice() {
-		int dice1 = rollDice();
-		int dice2 = rollDice();
-		int sum = dice1 + dice2;
-		System.out.println("You rolled " + dice1 + " + " + dice2 + " = " + sum);
-		return sum;
-	}
-
+		 int sum = rollTwoDice();
+	        if (sum == 2 || sum == 3 || sum == 12) {
+	            System.out.println("You lose.");
+	        } else if (sum == 7 || sum == 11) {
+	            System.out.println("You win.");
+	        } else {
+	            int point = sum;
+	            boolean isOver = false;
+	 
+	            System.out.println("Point is: " + point + " roll again.");
+	            while (!isOver) {
+	                sum = rollTwoDice();
+	                if (point == sum) {
+	                    System.out.println("You got " + sum + ". You win.");
+	                    isOver = true;
+	                } else if (sum == 7) {
+	                    System.out.println("You got " + sum + ". You lose.");
+	                    isOver = true;
+	                }
+	            }
+	        }
+	    }
+	 
+	    // Method rollDice
+	    public static int rollDice() {
+	        // Generate a random number between 1 to 6
+	        return (int) (1 + Math.random() * 6);
+	    }
+	 
+	    // Method printRoll prints the sum of the two dice
+	    public static int rollTwoDice() {
+	        int dice1 = rollDice();
+	        int dice2 = rollDice();
+	        int sum = dice1 + dice2;
+	        System.out.println("You rolled " + dice1 + " + " + dice2 + " = " + sum);
+	        return sum;
+	    }
 }
