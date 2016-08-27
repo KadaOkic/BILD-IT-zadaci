@@ -36,7 +36,7 @@ public class Zadatak5 {
 				for (int i = 0; i < 5; i++) {
 					list2.add(input.nextInt());
 				}
-				// printing out the results of the method
+				// printing the results of the method
 				System.out.println("Merged lists are: " + union(list1, list2));
 			} catch (InputMismatchException ex) {
 				System.out.println("Try again. ("

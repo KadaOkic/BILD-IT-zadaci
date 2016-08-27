@@ -27,9 +27,9 @@ public class Zadatak1 {
 			}
 			System.out.println();
 		}
-		// printing out the results for rows
+		// printing the results for rows
 		System.out.println("Largest row is " + getRows(matrix));
-		// printing out the results for columns
+		// printing the results for columns
 		System.out.println("Largest column is " + getColumns(matrix));
 
 	}

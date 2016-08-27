@@ -22,6 +22,7 @@ public class Zadatak2 {
 				System.out.println("Enter 5 integers:");
 				ArrayList<Integer> list = new ArrayList<>();
 				for (int i = 0; i < 5; i++) {
+					// add to the list input user enters
 					list.add(input.nextInt());
 				}
 				sort(list);

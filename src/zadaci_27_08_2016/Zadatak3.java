@@ -27,7 +27,7 @@ public class Zadatak3 {
 				for (int i = 0; i < 5; i++) {
 					list.add(input.nextDouble());
 				}
-				// printing out the list and the result of sum method
+				// printing the list and the result of sum method
 				System.out.println("Numbers you entered are: " + list
 						+ "\nSum is: " + sum(list));
 			} catch (InputMismatchException ex) {

@@ -59,7 +59,7 @@ public class Zadatak4 {
 				unique.add(list.get(i));
 			}
 		}
-		// printing out old and new lists
+		// printing old and new lists
 		System.out.println("Numbers you entered are: " + list
 				+ "\nUnique numbers are: " + unique);
 
