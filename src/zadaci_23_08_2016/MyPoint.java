@@ -1,8 +1,8 @@
 package zadaci_23_08_2016;
 
 public class MyPoint {
-	double x;
-	double y;
+	public double x;
+	public double y;
 
 	// default constructor that sets values of x and y to 0
 	public MyPoint() {
