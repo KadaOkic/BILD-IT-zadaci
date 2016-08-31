@@ -1,0 +1,2 @@
+String nije primitivan tip podatka u Javi,
+veæ je objekat koji pripada klasi String class. 
