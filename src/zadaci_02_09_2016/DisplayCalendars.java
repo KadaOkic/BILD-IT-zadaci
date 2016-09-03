@@ -15,18 +15,22 @@ import java.util.Calendar;
 public class DisplayCalendars {
 
 	 public static void main(String[] args) {
-	        boolean isGood = false;
-	        int month = Integer.parseInt(args[0]);
-	        int year = Integer.parseInt(args[1]);
+		 if (args.length >= 2) {
+	            int month = Integer.parseInt(args[0]);
+	            int year = Integer.parseInt(args[1]);
 	 
-	        printMonth(month, year);
+	            printMonth(month, year);
+	        } else {
+	            Calendar now = Calendar.getInstance();
+	            printMonth((now.get(Calendar.MONTH) + 1), now.get(Calendar.YEAR));
+	        }
 	 
 	    }
 	 
 	    public static void printMonth(int month, int year) {
 	        if (month != 0 && year != 0) {
 	            // printing out header (month and year)
-	            System.out.println(whichMonth(month) + "\t" + year + "\n");
+	            System.out.println("  \t\t  " + whichMonth(month) + "\t" + year + "\n");
 	            // printing out days of the week
 	            System.out.println("Sun\tMon\tTue\tWed\tThu\tFri\tSat");
 	            System.out.println("___________________________________________________\n");
